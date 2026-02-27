@@ -1,9 +1,11 @@
-import axios from 'axios';
+import axios from "axios";
 
-const api = axios.create({
-    baseURL: 'http://localhost:5000/api',
+const API = axios.create({
+  baseURL: "https://mern-test-sarthak-saini07-1.onrender.com/api",
 });
-api.interceptors.request.use((req)=>{
+
+
+API.interceptors.request.use((req)=>{
     const token = localStorage.getItem('token');
     if(token){
         req.headers.Authorization = `Bearer ${token}`;
@@ -11,4 +13,4 @@ api.interceptors.request.use((req)=>{
     return req;
 
 });
-export default api;
+export default API;
