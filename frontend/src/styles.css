@@ -1,0 +1,166 @@
+/* ===== CENTER WRAPPER ===== */
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 45px 35px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+  color: white;
+  animation: fadeIn 0.6s ease-in-out;
+  text-align: center;
+}
+
+/* ===== TITLE ===== */
+
+.container h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* ===== INPUT FIELDS ===== */
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 18px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+/* Input Hover */
+form input:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Focus */
+form input:focus {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+}
+
+/* ===== BUTTON ===== */
+
+form button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ffffff, #f3f3f3);
+  color: #6c4ed8;
+  transition: all 0.3s ease;
+}
+
+/* Button Hover */
+form button:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(135deg, #ffffff, #e6e6e6);
+}
+
+/* ===== LINK ===== */
+
+.link-text {
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+.link-text a {
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.link-text a:hover {
+  text-decoration: underline;
+}
+
+/* ===== DASHBOARD ===== */
+
+.dashboard {
+  width: 100%;
+  max-width: 900px;
+  padding: 45px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+  color: white;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* ===== DASHBOARD FORM ===== */
+
+.dashboard form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto;
+  gap: 12px;
+  margin-bottom: 35px;
+}
+
+.dashboard form input {
+  margin: 0;
+}
+
+/* ===== COURSE CARD ===== */
+
+.course-card {
+  background: rgba(255, 255, 255, 0.25);
+  padding: 18px 22px;
+  border-radius: 14px;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.course-card button {
+  background: #ff4d4d;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.course-card button:hover {
+  background: #ff2e2e;
+  transform: scale(1.05);
+}
+
+/* ===== ANIMATION ===== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

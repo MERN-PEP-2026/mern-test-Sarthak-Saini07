@@ -18,25 +18,30 @@ function Login() {
   };
 
   return (
-    <div>
+    <div className="container">
       <h2>Login</h2>
 
       <form onSubmit={handleSubmit}>
         <input
+          type="email"
           placeholder="Email"
-          onChange={(e) => setForm({ ...form, email: e.target.value })}
+          onChange={(e) =>
+            setForm({ ...form, email: e.target.value })
+          }
         />
-        <br />
+
         <input
           type="password"
           placeholder="Password"
-          onChange={(e) => setForm({ ...form, password: e.target.value })}
+          onChange={(e) =>
+            setForm({ ...form, password: e.target.value })
+          }
         />
-        <br />
+
         <button type="submit">Login</button>
       </form>
 
-      <p>
+      <p className="link-text">
         New user? <Link to="/">Register</Link>
       </p>
     </div>
